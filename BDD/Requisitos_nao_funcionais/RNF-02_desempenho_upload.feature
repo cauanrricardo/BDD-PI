@@ -3,12 +3,12 @@ Feature: Garantir desempenho de upload
   Quero que o upload processe com bom desempenho
   Para não aguardar tempo excessivo
 
-  Scenario: Upload de arquivo de ate 10 MB em tempo aceitável
+  Scenario: Upload de arquivo de até 10 MB em tempo aceitável
     Given que o usuário possui um arquivo de até 10 MB para envio
     And a conexão disponível é de 10 Mbps
+    And o tempo considera apenas a etapa de envio excluindo processamento de IA
     When realiza o upload do arquivo
     Then o envio é concluído em menos de 5 segundos
-    And o tempo medido considera apenas a etapa de envio
 
   Scenario: Fila de processamento de IA visível por imagem
     Given que o usuário concluiu o upload de múltiplas imagens
