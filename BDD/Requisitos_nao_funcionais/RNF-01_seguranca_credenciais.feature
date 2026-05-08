@@ -22,7 +22,7 @@ Feature: Garantir segurança e proteção de credenciais
     And uma nova autenticação é solicitada
 
   Scenario: Conta é bloqueada após tentativas inválidas consecutivas
-    Given que o usuário informa senha incorreta 5 vezes consecutivas
-    When tenta autenticar novamente antes de 15 minutos
+    Given que a conta atingiu 5 tentativas de autenticação incorretas consecutivas
+    When o usuário tenta autenticar novamente antes de 15 minutos
     Then o acesso permanece bloqueado
-    And o sistema informa tempo restante de bloqueio
+    And o sistema informa o tempo restante de bloqueio
