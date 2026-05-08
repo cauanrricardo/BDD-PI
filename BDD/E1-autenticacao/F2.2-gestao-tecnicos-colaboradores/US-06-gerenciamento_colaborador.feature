@@ -1,7 +1,3 @@
-# ─────────────────────────────────────────────
-# US-06 — Gerenciamento de Colaboradores
-# ─────────────────────────────────────────────
-
 Feature: Gerenciar colaboradores sob responsabilidade
   Como Engenheiro ou Técnico
   Quero gerenciar os Colaboradores sob minha responsabilidade
