@@ -4,7 +4,7 @@ Feature: Acionar análise por IA e revisar laudo gerado
   Quero acionar a análise por IA, acompanhar o processamento e revisar o laudo
   Para finalizar a inspeção com os resultados corretos
 
-  Scenario: Botão de análise habilitado somente com pré-requisitos atendidos
+  Scenario: Botão de análise habilitado somente com os pré-requisitos atendidos
     Given o usuário realizou upload válido de imagens e preencheu os dados geográficos
     When acessa a tela de análise
     Then o botão "Analisar com IA" está disponível para acionamento
