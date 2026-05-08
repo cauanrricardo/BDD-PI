@@ -1,15 +1,22 @@
+
 Feature: Garantir usabilidade e responsividade da interface
   Como usuário
   Quero que a interface seja intuitiva e responsiva em desktop e dispositivos móveis
   Para usá-la em escritório e em campo
 
-  Scenario: Layout responsivo por faixas de largura
-    Given que o usuário acessa o sistema em diferentes tamanhos de tela
-    When visualiza a interface em resolução desktop (maior ou igual a 1280 px)
+  Scenario: Layout aplicado corretamente em resolução desktop
+    Given que o usuário acessa o sistema em resolução maior ou igual a 1280 px
+    When visualiza qualquer tela da aplicação
     Then o layout desktop é aplicado corretamente
-    When visualiza a interface em resolução tablet (de 768 px a 1279 px)
+
+  Scenario: Layout aplicado corretamente em resolução tablet
+    Given que o usuário acessa o sistema em resolução entre 768 px e 1279 px
+    When visualiza qualquer tela da aplicação
     Then o layout tablet é aplicado corretamente
-    When visualiza a interface em resolução mobile (menor que 768 px)
+
+  Scenario: Layout aplicado corretamente em resolução mobile
+    Given que o usuário acessa o sistema em resolução menor que 768 px
+    When visualiza qualquer tela da aplicação
     Then o layout mobile é aplicado corretamente
 
   Scenario: Navegação e toque adequados em dispositivos móveis
