@@ -1,7 +1,6 @@
 # BDD-PI
 
 ## Introducao
-
 O BDD-PI e um projeto de especificacao de produto voltado para inspecao de pavimentos com apoio de inteligencia artificial. A ideia central e simples: o usuario envia fotos e videos (principalmente capturados por drone) e recebe de volta a identificacao de defeitos, como buracos, panelas e trincas, para apoiar a tomada de decisao em manutencao viaria.
 
 Alem da identificacao automatica, o projeto tambem considera necessidades reais de campo e de gestao, como estimativa de dimensoes/profundidade dos defeitos, calculo de indices tecnicos de manutencao e organizacao das informacoes para uso por equipes tecnicas.
